@@ -1,0 +1,606 @@
+body {
+	background-color: #eee8e6;
+	background-image: url(../images/background.gif);
+	color: #666666;
+	font-family: "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	text-align: center;
+	margin:0px;
+}
+
+/*
+********************************
+*  タイトルロゴ                *
+********************************
+*/
+#title h1 {
+	line-height: 0px;
+}
+
+/*
+********************************
+*  メニュー                    *
+********************************
+*/
+
+#menu {
+	background-image: url(../images/menu/menu_background.png);
+	/*
+	background-color: #FFFFFF;
+	background-color: #f8f5f5;
+	*/
+	position: fixed;
+	z-index: 99999;
+}
+
+#menu_list ul {
+	margin:0px;
+	padding:0px;
+}
+
+#menu_list ul li {
+	list-style-type: none;
+	display: block;
+}
+
+#menu_list ul li a img {
+	padding-bottom: 15px;
+}
+
+#menu_list ul li a:hover img {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+}
+
+#menu_list ul li#menu_welcome a:hover img {
+	background-image: url(../images/menu/menu_welcome_over.png);
+}
+
+#menu_list ul li#menu_price a:hover img {
+	background-image: url(../images/menu/menu_price_over.png);
+}
+
+#menu_list ul li#menu_members a:hover img {
+	background-image: url(../images/menu/menu_members_over.png);
+}
+
+#menu_list ul li#menu_gallery a:hover img {
+	background-image: url(../images/menu/menu_gallery_over.png);
+}
+
+#menu_list ul li#menu_access a:hover img {
+	background-image: url(../images/menu/menu_access_over.png);
+}
+
+#menu_list ul li#menu_link a:hover img {
+	background-image: url(../images/menu/menu_link_over.png);
+}
+
+/*
+********************************
+*  メインコンテンツ            *
+********************************
+*/
+
+#contents {
+	text-align:left;
+}
+
+/*
+********************************
+*  タイトル                       *
+********************************
+*/
+#page_title, #page_title_sp {
+	margin-top:0px;	
+	margin-bottom: 20px;
+}
+
+/*
+********************************
+*  フッター                     *
+********************************
+*/
+
+#footer {
+	padding-top: 20px;
+}
+#footer {
+	position: relative;
+}
+
+#footer_contact {
+	color: #42210b;
+	text-align: left;
+	font-style: normal;
+	padding-top: 70px;
+}
+
+#footer_contact p {
+	background-repeat: no-repeat;
+	background-position:0% 50%;
+	padding-left: 30px;
+	margin: 0px;
+	line-height:150%;
+}
+
+#footer_map {
+	border:1px solid #42210b;
+}
+
+#footer_address {
+	background-image: url(../images/footer/footer_house.gif);
+}
+
+#footer_tel {
+	background-image: url(../images/footer/footer_tel.gif);
+}
+
+#footer_holiday {
+	background-image: url(../images/footer/footer_calendar.gif);
+}
+
+#footer_parking {
+	background-image: url(../images/footer/footer_car.gif);
+}
+
+#footer_sns {
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+	*left: 0px;
+}
+
+#footer_sns_inner_2 {
+	width:323px;
+	float: right;
+}
+
+#footer_sns_message {
+	text-align: center;
+}
+
+.footer_sns_icon {
+	height: 201px;
+	float: left;
+	background-repeat: no-repeat;
+	text-align: left;
+}
+
+.footer_sns_icon img {
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+#footer_tw, #footer_fb {
+	margin-right: 10px;
+
+}
+
+#footer_tw {
+	background-image: url(../images/footer/twitter_bg.png);
+	width: 93px;
+}
+
+#footer_fb {
+	background-image: url(../images/footer/facebook_bg.png);
+	width: 94px;
+}
+
+#footer_ig {
+	background-image: url(../images/footer/instagram_bg.png);
+	width: 116px;
+}
+
+#footer_copy {
+	background-image: url(../images/footer/footer_wood.gif);
+	color: #ffffff;
+	padding:10px 0px;
+}
+
+/*
+********************************
+*  共通項目                    *
+********************************
+*/
+
+a { color:#42210b; text-decoration:none; }
+
+a img {border: none;}
+
+.fl_l { float: left; }
+.fl_r {  float: right;}
+.clear { clear: both; }
+
+.w_full { width:100%; }
+
+.mt_0 { margin-top: 0px; }
+
+.mt_10 { margin-top: 10px; }
+.mb_10 { margin-bottom:10px; }
+.ml_10 { margin-left: 10px; }
+.mr_10 { margin-right: 10px; }
+
+.mt_20 { margin-top: 20px; }
+.mb_20 { margin-bottom: 20px; }
+
+.p_10 { padding: 10px; }
+
+.p_20 { padding:20px; }
+.pt_20 { padding-top:20px; }
+.pb_20 { padding-bottom:20px; }
+
+.brown_dot {
+	background-image: url(../images/brown_dot.gif);
+}
+
+.white_paper {
+	background-image: url(../images/white_paper.gif);
+}
+
+.dot_line_1, .dot_line_2, .dot_line_3, .dot_line_4 {
+	background-repeat:no-repeat;
+	background-position:left bottom;
+	padding-bottom:15px;
+}
+.dot_line_1 {
+	background-image:url(../images/dot_line_1.png);
+}
+.dot_line_2 {
+	background-image:url(../images/dot_line_2.png);
+}
+.dot_line_3 {
+	background-image:url(../images/dot_line_3.png);
+}
+.dot_line_4 {
+	background-image:url(../images/dot_line_4.png);
+}
+
+
+.caution {
+	margin-left:1em;
+	text-indent:-1em;
+	font-size:80%;
+}
+
+.caution p {
+	margin:0px;
+}
+
+/*
+********************************
+*                              *
+*	スマホ(～767px)　　           *
+*                              *
+********************************
+*/
+@media screen and (max-width:767px) { 
+
+	/*
+	********************************
+	*  レイアウト                  *
+	********************************
+	*/
+	#wrapper {
+		text-align: left;
+	}
+	
+	/*
+	********************************
+	*  タイトルロゴ                *
+	********************************
+	*/	
+	#logo_sp, #logo_sp img {
+		height: 60px;
+	}
+	#title {
+		width: 75%;
+		display: block;
+		float: left;
+		text-align:left;
+	}
+
+	/*
+	********************************
+	*  メニュー                    *
+	********************************
+	*/
+	#menu_list {
+		width: 20%;
+		display: block;
+		float: right;	
+	}
+
+	#menu_toggle {
+		background-image: url(../images/menu/menu_toggle.gif);
+		background-position: 50% 50%;
+		display: block;
+		float: right;
+		width: 60px;
+		height: 60px;
+		text-indent: -200em;
+		overflow: hidden;
+		margin-top: 10px;
+		margin-right: 10px;
+	}
+
+	#menu_toggle.toggle_close {
+		background-image: url(../images/menu/menu_toggle_close.gif);
+	}
+
+	#menu_list ul {
+		display: none;
+		background-image: url(../images/menu/menu_background.png);
+		position: fixed;
+		top: 80px;
+		right: 0px;
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	#menu_list ul li { 
+		padding-left: 10px;
+	}
+
+	/*
+	********************************
+	*  メインコンテンツ            *
+	********************************
+	*/
+	#contents {
+		padding-top: 90px;
+	}
+
+	/*
+	********************************
+	*  タイトル                       *
+	********************************
+	*/
+	#page_title { display: none; }
+	#page_title_sp { display: block; }
+
+	/*
+	********************************
+	*  フッター                     *
+	********************************
+	*/
+	#footer_contact {
+		padding-top: 0px;
+		padding-bottom: 220px;
+	}
+
+	#footer_sns_inner {
+		text-align: center;
+	}
+
+	#footer_sns_inner_2 {
+		float: none;
+		margin: 0px auto;
+	}
+
+	#footer_sns {
+		bottom: 55px;
+	}
+}
+
+/*
+********************************
+*                              *
+*	スマホ・タブレット共通(～1023px)　　*
+*                              *
+********************************
+*/
+@media screen and (max-width:1023px) {	
+
+	/*
+	********************************
+	*  レイアウト                     *
+	********************************
+	*/
+	#menu {
+		width: 100%;
+		left: 0px;
+		top:0px;
+	}
+
+	.footer_wrapper {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	/*
+	********************************
+	*  タイトルロゴ	                   *
+	********************************
+	*/
+	#logo {display: none;}
+	#logo_sp {
+		display: block;
+		margin:0px;
+	}
+
+	#title h1 {
+		margin:10px;
+	}
+
+	/*
+	********************************
+	*  メインコンテンツ            *
+	********************************
+	*/
+	#contents {
+		margin:0px 10px;
+	}
+
+}
+
+/*
+********************************
+*                              *
+*	タブレット(768px～1023px)　　   *
+*                              *
+********************************
+*/
+@media screen and (min-width:768px) and ( max-width:1023px) {
+
+	body {
+		font-size:1.5em;
+		line-height:2em;
+	}
+
+	/*
+	********************************
+	*  タイトルロゴ	                   *
+	********************************
+	*/
+	#title {
+		display: block;
+		width:25%;
+		float: left;
+		text-align:left;
+	}
+
+	#logo_sp, #logo_sp img {
+		height: 80px;
+	}
+
+	/*
+	********************************
+	*  メニュー	                   *
+	********************************
+	*/
+	#menu_list {
+		display: block;
+		width:75%;
+		float:right;
+		text-align: right;
+		padding-top: 13px;
+	}
+
+	#menu_list ul li {
+		display: inline;
+	}
+
+	#menu_list ul li img {
+		margin-right:10px;
+	}
+
+	/*
+	********************************
+	*  メインコンテンツ            *
+	********************************
+	*/
+
+	#contents {
+		padding-top: 150px;
+	}
+
+	/*
+	********************************
+	*  フッター                     *
+	********************************
+	*/
+	#footer_sns {
+		bottom:50px;
+	}
+	
+	#footer_copy {
+		font-size:24px;
+	}
+}
+
+/*
+********************************
+*                              *
+*	タブレット・PC共通(768px～)     *
+*                              *
+********************************
+*/
+@media screen and (min-width:768px) {
+
+	/*
+	********************************
+	*  メニュー	                   *
+	********************************
+	*/
+	#menu_toggle {
+		display: none;
+	}
+
+	/*
+	********************************
+	*  タイトル                       *
+	********************************
+	*/
+	#page_title { display: block; }
+	#page_title_sp { display: none; }
+
+	/*
+	********************************
+	*  フッター	                   *
+	********************************
+	*/
+	#footer_copy br { display: none; }
+}
+
+/*
+********************************
+*                              *
+*	PC(1024px～)               *
+*                              *
+********************************
+*/
+@media screen and (min-width:1024px) {
+
+	/*
+	********************************
+	*  レイアウト                     *
+	********************************
+	*/
+	#wrapper, .footer_wrapper {
+		width: 916px;
+		margin:0px auto;
+		text-align: left;
+	}
+
+	#menu {
+		width:275px;
+		display: blok;
+		float: left;
+		position: static;
+		top: 0px;
+	}
+
+	#contents {
+		width:611px;
+		display: block;
+		float: right;
+		margin-top:20px;
+	}
+
+	/*
+	********************************
+	*  タイトルロゴ	                   *
+	********************************
+	*/
+	#title {
+		padding:20px;
+	}
+
+	#logo {
+		display: block;
+		margin:0px;
+	}
+	#logo_sp {display: none;}
+
+	/*
+	********************************
+	*  メニュー	                   *
+	********************************
+	*/
+	#menu_list ul {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 10px;
+	}
+}

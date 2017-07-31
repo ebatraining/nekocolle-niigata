@@ -1,0 +1,288 @@
+/*
+********************************
+*  料金プラン共通              *
+********************************
+*/
+.plan {
+	padding:5px;
+}
+
+.plan_inner {
+	background-image:url(../images/background.gif);
+	padding:20px;
+	position:relative;
+}
+
+.plan_title, .item_title  {
+	margin-top:0px;
+	margin-bottom:10px;
+}
+
+.plan_list_block {
+	width:70%;
+}
+
+.price_list li, 
+.price_d_list dt, 
+.price_d_list dd,
+#juice_price  {
+	font-size:120%;
+}
+
+.price_list {
+	padding-left:0px;
+	margin:0px;
+}
+
+.price_list li {
+	list-style-type:none;
+}
+
+.price_d_list dd {
+	margin-left:20px;
+}
+
+.price_list li span, 
+.price_d_list dt span {
+	background-image:url(../images/price/footprint.png);
+	background-posigino:0% 50%;
+	background-repeat:no-repeat;
+	padding-left:20px;
+}
+
+/*
+********************************
+*  通常料金                    *
+********************************
+*/
+#normal .price_list li {
+	width:50%;
+	float:left;
+}
+
+#normal_pict {
+	position:absolute;
+	right:20px;
+	bottom:0px;
+	width:35%;
+}
+
+/*
+********************************
+*  平日限定コース              *
+********************************
+*/
+#weekday .price_d_list dt {
+	width:40%;
+	float:left;
+}
+
+#weekday_pict {
+	position:absolute;
+	right:20px;
+	bottom:0px;
+	width:35%;
+}
+
+/*
+********************************
+*  お子様コース                *
+********************************
+*/
+#kids_list {
+	width:65%;
+	float:right;
+}
+
+#kids_pict {
+	width:35%;
+	float:left;
+}
+
+#kids_pict img {
+	width:100%
+}
+
+#kids_list ul {
+	margin:0px;
+	padding-left:20px;
+}
+
+/*
+********************************
+*  カリカリゴハン･缶ジュース   *
+********************************
+*/
+
+#meal_change_title, 
+#juice_service {
+	margin-top:10px;
+	margin-bottom:0px;
+}
+
+.juice_l {
+	width:30%;
+	float:left;
+}
+
+#juice_price {
+	margin:0px;
+}
+
+/*
+********************************
+*                              *
+*	スマホ(～767px)　　           *
+*                              *
+********************************
+*/
+@media screen and (max-width:479px) { 
+
+	/*
+	********************************
+	*  料金プラン共通              *
+	********************************
+	*/
+	.plan_list_block {
+		width:50%;
+	}
+
+
+	/*
+	********************************
+	*  通常料金                    *
+	********************************
+	*/	
+	#normal .price_list li {
+		width:100%;
+		float:normal;
+	}
+	
+	#normal_pict {
+		width:45%;
+	}
+	
+	/*
+	********************************
+	*  平日限定コース              *
+	********************************
+	*/
+	#weekday_pict {
+		width:50%;
+	}
+	
+	/*
+	********************************
+	*  お子様コース                *
+	********************************
+	*/
+	#kids_list {
+		width:100%;
+		float:none;
+	}
+	
+	#kids_pict {
+		width:100%;
+		float:none;
+		text-align:center;
+	}
+	
+	#kids_pict img {
+		width:50%;
+	}
+
+	/*
+	********************************
+	*  カリカリゴハン･缶ジュース   *
+	********************************
+	*/	
+	.item_title, #juice_service {
+		display:none;
+	}
+	.item_title_sp, #juice_service_sp {
+		display:block;
+	}
+	
+	.juice_l {
+		width:100%;
+		float:none;
+	}
+
+}
+
+/*
+********************************
+*                              *
+*	スマホ・タブレット共通(～1023px)　　*
+*                              *
+********************************
+*/
+@media screen and (max-width:1023px) {	
+
+	/*
+	********************************
+	*  平日限定コース              *
+	********************************
+	*/
+	#weekday .price_d_list dt {
+		clear:both;
+		width:100%;
+		float:none;
+	}
+}
+
+/*
+********************************
+*                              *
+*	タブレット(768px～1023px)　　   *
+*                              *
+********************************
+*/
+@media screen and (min-width:480px) and ( max-width:1023px) {
+		
+	/*
+	********************************
+	*  料金プラン共通              *
+	********************************
+	*/
+	.price_list li span, 
+	.price_d_list dt span {
+		background-image:url(../images/price/footprint_sp.png);
+		padding-left:25px;
+	}
+	
+	.price_d_list dd {
+		margin-left:25px;
+	}
+
+	/*
+	********************************
+	*  平日限定コース              *
+	********************************
+	*/
+	#weekday_pict {
+		width:45%;
+	}
+}
+
+/*
+********************************
+*                              *
+*	タブレット・PC共通(768px～)     *
+*                              *
+********************************
+*/
+@media screen and (min-width:480px) {
+	
+	/*
+	********************************
+	*  カリカリゴハン･缶ジュース   *
+	********************************
+	*/	
+	.item_title, #juice_service {
+		display:block;
+	}
+	.item_title_sp, #juice_service_sp {
+		display:none;
+	}
+}

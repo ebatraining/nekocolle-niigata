@@ -1,0 +1,176 @@
+
+/*
+********************************
+*  メンバーズカード 説明       *
+********************************
+*/
+#members_card_desc {
+	font-size: 120%;
+}
+
+#members_card_stamp {
+	background-image: url(../images/members/members_card_stamp_bg.png);
+	background-position: left bottom;
+	background-repeat: repeat-x;
+}
+
+#members_card_free {
+	text-align:center;
+}
+
+#members_card_free img {
+	width:80%;
+}
+
+/*
+********************************
+*  特典                         *
+********************************
+*/
+
+#privilege {
+	position: relative;
+	padding-top: 40px;
+}
+
+#privilege_title {
+	position: absolute;
+	left:0px;
+	top:0px;
+	margin:0px;
+	padding-left:30px;
+}
+
+#privilege_pict {
+	position:absolute;
+	right:30px;
+	bottom:30px;
+	width:20%;
+}
+
+#privilege_inner {
+	padding:30px;
+	z-index: -10;
+}
+
+#privilege ul {
+	padding-left: 25px;
+}
+
+#privilege ul li {
+	list-style-image: url(../images/members/privilege_footprint.gif);
+	color: #42210b;
+} 
+#privilege ul li strong {
+	font-size: 250%;
+	color: #ff6600
+}
+
+/*
+********************************
+*  個人情報                    *
+********************************
+*/
+
+
+#personal_data dl { 
+	margin: 0px;
+}
+#personal_data dd { 
+	padding-top: 15px;
+	margin-left:0px;
+	margin-bottom: 20px;
+}
+#personal_data dt span { 
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	padding-bottom: 15px;
+}
+
+#personal_data_desc_1 span {
+	background-image:url(../images/readme/regist_no_line_1.png);
+}
+#personal_data_desc_2 span {
+	background-image:url(../images/readme/regist_no_line_2.png);
+}
+
+
+/*
+********************************
+*                              *
+*	スマホ(～767px)　　           *
+*                              *
+********************************
+*/
+@media screen and (max-width:479px) {
+
+	/*
+	********************************
+	*  特典                         *
+	********************************
+	*/
+	#privilege_pict {
+		display:none;
+	}
+
+	/*
+	********************************
+	*  個人情報                    *
+	********************************
+	*/
+	#personal_data_title { display: none; }
+	#personal_data_title_sp { display: block; }
+
+}
+/*
+********************************
+*                              *
+*	タブレット(768px～1023px)　　   *
+*                              *
+********************************
+*/
+@media screen and (min-width:480px) and ( max-width:1023px) {
+	#privilege_list_2 {
+		width: 70%;
+	}
+}
+/*
+********************************
+*                              *
+*	タブレット・PC共通(768px～)     *
+*                              *
+********************************
+*/
+@media screen and (min-width:480px) {
+	
+	/*
+	********************************
+	*  個人情報                    *
+	********************************
+	*/
+	#personal_data_title { display: block; }
+	#personal_data_title_sp { display: none; }
+}
+
+/*
+********************************
+*                              *
+*	PC(1024px～)               *
+*                              *
+********************************
+*/
+@media screen and (min-width:1024px) {
+	
+	/*
+	********************************
+	*  特典                         *
+	********************************
+	*/
+	#privilege {
+		padding-top:25px;
+	}
+
+	#privilege_title img {
+		width: 60%;
+	}
+}

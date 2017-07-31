@@ -1,0 +1,34 @@
+#link {
+	position:relative;
+}
+
+.link_block_inner {
+	padding:20px;
+}
+
+
+.link_title {
+	background-image:url(../images/link/footprint.gif);
+	background-repeat:no-repeat;
+	background-position:left 0.5em;
+	padding-left:20px;
+}
+
+.link_title strong {
+	font-size:120%;
+}
+
+/*
+********************************
+*                              *
+*	タブレット(768px～1023px)　　   *
+*                              *
+********************************
+*/
+@media screen and (min-width:768px) and ( max-width:1023px) {
+	.link_title {
+		background-image:url(../images/link/footprint_sp.gif);
+		padding-left:25px;
+	}
+}
+
