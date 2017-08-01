@@ -214,13 +214,13 @@
 	********************************
 	*/
 	#youtube_text {
-		width:48%;
-		float:left;
+		width:97%;
+/*		float:left;*/
 	}
 
 	#youtube_movie {
-		width:50%;
-		float:right;
+		width:97%;
+/*		float:right;*/
 	}
 	#youtube_title { display: block; }
 	#youtube_title_sp { display: none; }
@@ -228,9 +228,8 @@
 	#youtube_movie_inner {
 		position: relative;
 		padding-bottom: 56.25%;
-		height: 0;
-		overflow: hidden;
-
+/*		height: 0; */
+/*		overflow: hidden; */
 	}
 
 	#youtube_movie_inner iframe {
