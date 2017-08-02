@@ -59,6 +59,10 @@ body {
 	background-image: url(../images/menu/menu_price_over.png);
 }
 
+#menu_list ul li#menu_price a.current img {
+	background-image: url(../images/menu/menu_price_over.png);
+}
+
 #menu_list ul li#menu_members a:hover img {
 	background-image: url(../images/menu/menu_members_over.png);
 }
@@ -91,7 +95,7 @@ body {
 ********************************
 */
 #page_title, #page_title_sp {
-	margin-top:0px;	
+	margin-top:0px;
 	margin-bottom: 20px;
 }
 
@@ -273,7 +277,7 @@ a img {border: none;}
 *                              *
 ********************************
 */
-@media screen and (max-width:767px) { 
+@media screen and (max-width:767px) {
 
 	/*
 	********************************
@@ -283,12 +287,12 @@ a img {border: none;}
 	#wrapper {
 		text-align: left;
 	}
-	
+
 	/*
 	********************************
 	*  タイトルロゴ                *
 	********************************
-	*/	
+	*/
 	#logo_sp, #logo_sp img {
 		height: 60px;
 	}
@@ -307,7 +311,7 @@ a img {border: none;}
 	#menu_list {
 		width: 20%;
 		display: block;
-		float: right;	
+		float: right;
 	}
 
 	#menu_toggle {
@@ -338,7 +342,7 @@ a img {border: none;}
 		padding-bottom: 10px;
 	}
 
-	#menu_list ul li { 
+	#menu_list ul li {
 		padding-left: 10px;
 	}
 
@@ -390,7 +394,7 @@ a img {border: none;}
 *                              *
 ********************************
 */
-@media screen and (max-width:1023px) {	
+@media screen and (max-width:1023px) {
 
 	/*
 	********************************
@@ -407,7 +411,7 @@ a img {border: none;}
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-	
+
 	/*
 	********************************
 	*  タイトルロゴ	                   *
@@ -503,7 +507,7 @@ a img {border: none;}
 	#footer_sns {
 		bottom:50px;
 	}
-	
+
 	#footer_copy {
 		font-size:24px;
 	}

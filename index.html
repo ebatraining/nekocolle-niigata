@@ -3,11 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW,NOARCHIVE">
-    
+
 	<!-- InstanceBeginEditable name="doctitle" -->
 	<title>ねこコレ 新潟市役所前店</title>
 	<!-- InstanceEndEditable -->
-    
+
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico">
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <!-- InstanceBeginEditable name="css" -->
@@ -31,12 +31,17 @@
 				}, function(){
 				$(this).trigger('stopRumble');
 			});
-
             $("#menu_toggle").click(function () {
                 $(this).toggleClass("toggle_close");
                 $("#menu_list ul").toggle();
             });
 		});
+
+		$(function(){
+			var url = window.location.pathname;
+			$('#menu_list ul li a[href="'+url+'"]').parent().addClass('current');
+		});
+
     </script>
     <!-- InstanceBeginEditable name="jsScript" -->
 	<script>
@@ -58,13 +63,13 @@
 			<div id="menu_inner">
 
 				<header id="title">
-					
+
                     <h1 id="logo">
                         <a href="index.html">
                             <img src="images/menu/logo.png" alt="ねこコレ 新潟市役所前店">
                         </a>
                     </h1>
-                        
+
                     <h1 id="logo_sp">
                      	<a href="index.html">
                         	<img src="images/menu/logo_sp.png" alt="ねこコレ 新潟市役所前店">
@@ -107,32 +112,32 @@
 
 		<div id="contents">
 		<!-- InstanceBeginEditable name="contents" -->
-		
+
         <img src="images/top/main.jpg" alt="ねこと一緒に癒しのひととき" id="main_visual" class="mb_20 w_full" />
-        
-        
+
+
 		<div id="main_desc" class="mb_20">
-        
+
         	<div id="main_desc_text">
         	新潟県内初の猫と遊べるお店。<br />
         	16匹の個性豊かな猫たちが皆様のお越しをお待ちしております。<br />
 			15分からコースがあるので、学校・仕事帰りなど気軽にお立ち寄りくださいませ。
           	</div>
-            
+
             <div id="main_desc_pict">
             	<img src="images/top/desc_pict.png" alt="" />
             </div>
-            
+
             <div id="main_desc_pict_sp">
             	<img src="images/top/desc_pict_sp.png" alt="" />
             </div>
-            
+
             <div class="clear"></div>
-            
+
         </div><!-- #main_desc -->
-        
+
 		<div id="link" class="mb_20">
-        
+
         	<div id="link_readme" class="link_block">
         		<img src="images/top/readme_dummy.gif" alt="初めての方へ" class="w_full link_title" />
         		<div class="brown_dot link_block_dot">
@@ -162,10 +167,10 @@
         	</div>
 
             <div class="clear"></div>
-            
+
         </div><!-- #link -->
-        
-        
+
+
          <div id="youtube">
 
          	<h2 id="youtube_title" class="mb_10">
@@ -174,14 +179,14 @@
          	<h2 id="youtube_title_sp" class="mb_10">
          		<img src="images/top/youtube_title_sp.png" alt="ねこスタッフ紹介ムービー" class="w_full" />
          	</h2>
-        
+
             <div id="youtube_text">
                 youtubeにもチャンネルがございます。<br />
                 右の動画以外にもありますのでぜひチェックしてみてください。(PCで再生される方、広告が表示されます)<br />
                 チャンネル登録&amp;高評価よろしくお願いします。<br />
                 ※Internet Explorerをお使いの方は、動画の閲覧は9以上でお願いいたします。
             </div>
-            
+
             <div id="youtube_movie">
             	<div id="youtube_movie_inner">
             		<![if !IE]>
@@ -197,11 +202,11 @@
             		<![endif]-->
             	</div>
             </div>
-               
+
             <div class="clear"></div>
-            
+
         </div>
-        
+
 		<!-- InstanceEndEditable -->
 		</div><!-- #contents -->
 
@@ -210,10 +215,10 @@
 	</div><!-- #wrapper -->
 
 	<footer id="footer">
-    
+
 		<div id="footer_inner" class="footer_wrapper pb_10">
 			<address id="footer_contact">
-            
+
 				<strong>ねこコレ新潟市役所前店</strong>
 				<p id="footer_address">新潟市中央区東中通り1番町86-15</p>
                 <p>関本ビル3F</p>
