@@ -3,11 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW,NOARCHIVE">
-    
+
 	<!-- InstanceBeginEditable name="doctitle" -->
 	<title>初めての方へ - ねこコレ 新潟市役所前店</title>
 	<!-- InstanceEndEditable -->
-    
+
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico">
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <!-- InstanceBeginEditable name="css" -->
@@ -32,10 +32,18 @@
 				$(this).trigger('stopRumble');
 			});
 
-            $("#menu_toggle").click(function () {
-                $(this).toggleClass("toggle_close");
-                $("#menu_list ul").toggle();
-            });
+      $("#menu_toggle").click(function () {
+          $(this).toggleClass("toggle_close");
+          $("#menu_list ul").toggle();
+      });
+			$('#menu_list ul li a').each(function(){
+				var $href = $(this).attr('href');
+				if(location.href.match($href)) {
+					$(this).parent('li').addClass('current');
+				} else {
+					$(this).parent('li').removeClass('current');
+				}
+			});
 		});
     </script>
     <!-- InstanceBeginEditable name="jsScript" -->
@@ -50,13 +58,13 @@
 			<div id="menu_inner">
 
 				<header id="title">
-					
+
                     <h1 id="logo">
                         <a href="index.html">
                             <img src="images/menu/logo.png" alt="ねこコレ 新潟市役所前店">
                         </a>
                     </h1>
-                        
+
                     <h1 id="logo_sp">
                      	<a href="index.html">
                         	<img src="images/menu/logo_sp.png" alt="ねこコレ 新潟市役所前店">
@@ -106,22 +114,22 @@
 		<h2 id="page_title_sp">
 			<img src="images/readme/readme_title_sp.png" alt="初めての方へ" class="w_full" />
 		</h2>
-        
+
         <div id="promise" class="mb_20">
-        
+
         	<div id="promise_title_block">
-            
+
         		<h3 id="promise_title"><img src="images/readme/promise_title.png" alt="page_title僕たちとのお約束" /></h3>
-                
+
                 <h3 id="promise_title_sp"><img src="images/readme/promise_title_sp.png" alt="僕たちとのお約束" /></h3>
-                            
+
             </div><!-- #promise_title_block -->
-            
+
             <div id="promise_list_block">
                 <div id="promise_list_block_inner">
                     <div id="promise_list_block_inner_2">
                     	<div id="promise_list_block_inner_3">
-                        
+
                             <ul>
                                 <li>ねこたちの抱っこはご遠慮ください</li>
                                 <li>写真撮影の際はフラッシュをお切りください</li>
@@ -129,55 +137,55 @@
                                 <li>周りのお客様の迷惑となる場合、退室をお願いすることがございます。</li>
                                 <li>飲酒をしてのご来店はお断りいたします</li>
                             </ul>
-                        
+
                             <div id="promis_message_block">
                                 <img src="images/readme/promise_message.gif" alt="約束ごとを守っていただき、人も猫も幸せな空間になるようご協力お願い申し上げます" />
                             </div>
-                            
+
                     	</div><!-- #promise_list_block_inner_3 -->
                     </div><!-- #promise_list_block_inner_2 -->
                 </div><!-- #promise_list_block_inner -->
             </div><!-- #promise_list_block -->
-        
+
         </div><!-- #promise -->
-        
+
 		<div id="cloth" class="mb_20">
-            
+
             	<img src="images/readme/cloth.png" alt="" id="cloth_pict" />
-            
+
  				お帰りの際にコロコロをご準備しております。<br />
                 どうぞご利用ください。<br />
-                万が一に備え、「汚れてはいけない・毛をつけたくない」大切な衣服を着てくることはオススメできません。           
+                万が一に備え、「汚れてはいけない・毛をつけたくない」大切な衣服を着てくることはオススメできません。
             <div class="clear"></div>
-                    
+
         </div><!-- #cloth -->
-        
+
         <div id="regist_no">
-        	
+
             <div id="regist_no_title_block">
             	<h3 id="regist_no_title"><img src="images/readme/regist_no_title.png" alt="動物取扱番号" /></h3>
             </div>
-            
+
             <dl id="regist_no_list">
-            
+
                 <dt><span>登録番号</span></dt>
                 <dd id="regist_no_list_no" class="dot_line_1"><span>新動セ（動）第16-05-007号</span></dd>
-                
+
             	<dt><span>登録年月日</span></dt>
                 <dd id="regist_no_list_dt" class="dot_line_2"><span>平成28年6月30日</span></dd>
-                
+
             	<dt><span>有効期限</span></dt>
                 <dd id="regist_no_list_remit" class="dot_line_3"><span>平成33年6月29日</span></dd>
-                
+
             	<dt><span>動物取扱業の種別</span></dt>
                 <dd id="regist_no_list_kind" class="dot_line_4"><span>展示</span></dd>
-                
+
             	<dt><span>取扱責任者</span></dt>
-                <dd id="regist_no_list_leadar"><span>池田寛明</span></dd>                
+                <dd id="regist_no_list_leadar"><span>池田寛明</span></dd>
             </dl>
-        
+
         </div><!-- #regist_no -->
-        
+
 		<!-- InstanceEndEditable -->
 		</div><!-- #contents -->
 
@@ -186,10 +194,10 @@
 	</div><!-- #wrapper -->
 
 	<footer id="footer">
-    
+
 		<div id="footer_inner" class="footer_wrapper pb_10">
 			<address id="footer_contact">
-            
+
 				<strong>ねこコレ新潟市役所前店</strong>
 				<p id="footer_address">新潟市中央区東中通り1番町86-15</p>
                 <p>関本ビル3F</p>

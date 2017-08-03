@@ -3,11 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW,NOARCHIVE">
-    
+
 	<!-- InstanceBeginEditable name="doctitle" -->
 	<title>リンク - ねこコレ 新潟市役所前店</title>
 	<!-- InstanceEndEditable -->
-    
+
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico">
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <!-- InstanceBeginEditable name="css" -->
@@ -32,10 +32,19 @@
 				$(this).trigger('stopRumble');
 			});
 
-            $("#menu_toggle").click(function () {
-                $(this).toggleClass("toggle_close");
-                $("#menu_list ul").toggle();
-            });
+	    $("#menu_toggle").click(function () {
+	        $(this).toggleClass("toggle_close");
+	        $("#menu_list ul").toggle();
+	    });
+
+			$('#menu_list ul li a').each(function(){
+				var $href = $(this).attr('href');
+				if(location.href.match($href)) {
+					$(this).parent('li').addClass('current');
+				} else {
+					$(this).parent('li').removeClass('current');
+				}
+			});
 		});
     </script>
     <!-- InstanceBeginEditable name="jsScript" -->
@@ -43,24 +52,24 @@
 			$(window).on('load resize', function(){
 
 				if ($("#contents").width() >= 600) {
-					
+
 					var $col1 = 0;
 					var $col2 = 0;
-					
+
 					$(".link_block").each(function(i, elem) {
 						$(elem).css("position", "absolute");
 						$(elem).css("width", "49%");
 						$(elem).css("padding-bottom", ($("#contents").width() / 50) + "px");
-						
+
 						var $col = 1;
 						var $min = $col1;
 						if ($min > $col2) {
 							$col = 2;
 							$min = $col2;
 						}
-						
+
 						if ($col == 1) {
-							$(elem).css("left", "0%"); 
+							$(elem).css("left", "0%");
 							$(elem).css("top", $col1 + "px");
 							$col1 = $col1 + $(elem).outerHeight() + 1;
 						} else if ($col == 2) {
@@ -68,11 +77,11 @@
 							$(elem).css("top", $col2 + "px");
 							$col2 = $col2 + $(elem).outerHeight() + 1;
 						}
-						
+
 					});
-					
+
 					$("#link").css("height", Math.max($col1, $col2) + 20 + "px");
-					
+
 				}
 				else
 				{
@@ -80,10 +89,10 @@
 						$(elem).css("position", "static");
 						$(elem).css("width", "100%");
 						$(elem).css("padding-bottom", "20px");
-						$(elem).css("left", ""); 
+						$(elem).css("left", "");
 						$(elem).css("top", "");
 					});
-					
+
 					$("#link").css("height", "");
 				}
 			});
@@ -100,13 +109,13 @@
 			<div id="menu_inner">
 
 				<header id="title">
-					
+
                     <h1 id="logo">
                         <a href="index.html">
                             <img src="images/menu/logo.png" alt="ねこコレ 新潟市役所前店">
                         </a>
                     </h1>
-                        
+
                     <h1 id="logo_sp">
                      	<a href="index.html">
                         	<img src="images/menu/logo_sp.png" alt="ねこコレ 新潟市役所前店">
@@ -149,7 +158,7 @@
 
 		<div id="contents">
 		<!-- InstanceBeginEditable name="contents" -->
-        
+
 		<h2 id="page_title">
 			<img src="images/link/link_title.png" alt="リンク" class="w_full" />
 		</h2>
@@ -168,14 +177,14 @@
                         	<strong>うえき動物病院</strong>さん
                     	</a>
                     </div>
-                    
+
                     <div class="link_desc">
                     当店でもお世話になっております！！
                     </div>
-                    
+
                 </div>
             </div>
-            
+
           	<div class="link_block">
             	<div class="link_block_inner white_paper">
                 	<a href="http://ndn2001.com">
@@ -186,15 +195,15 @@
                         	<strong>新潟動物ネットワーク</strong>さん
                     	</a>
                     </div>
-                    
+
                     <div class="link_desc">
                         新潟で活動している動物愛護団体さん。<br />
                         毎月里親さんの譲渡会も実施しております！！
                     </div>
-                    
+
                 </div>
             </div>
-            
+
           	<div class="link_block">
             	<div class="link_block_inner white_paper">
                 	<a href="http://www.nekocolle.info/yamagata/">
@@ -205,15 +214,15 @@
                         	<strong>ねこコレ山形店</strong>
                     	</a>
                     </div>
-                    
+
                     <div class="link_desc">
                         ねこコレの本店でもある「山形店」<br />
                         ワンちゃん・ネコちゃんのトリミングも行なっております！！
                     </div>
-                    
+
                 </div>
             </div>
-            
+
           	<div class="link_block">
             	<div class="link_block_inner white_paper">
                 	<a href="http://www.sugawara.ac.jp/pet/">
@@ -224,19 +233,19 @@
                         	<strong>仙台総合ペット専門学校</strong>さん
                     	</a>
                     </div>
-                    
+
                     <div class="link_desc">
                         店長の出身校でもある仙台総合ペット専門学校。<br />
 						あらゆるジャンルの飼育動物のプロを育てる専門学校です。
                     </div>
-                    
+
                 </div>
-            </div>            
-            
+            </div>
+
         </div>
 
 
-        
+
 		<!-- InstanceEndEditable -->
 		</div><!-- #contents -->
 
@@ -245,10 +254,10 @@
 	</div><!-- #wrapper -->
 
 	<footer id="footer">
-    
+
 		<div id="footer_inner" class="footer_wrapper pb_10">
 			<address id="footer_contact">
-            
+
 				<strong>ねこコレ新潟市役所前店</strong>
 				<p id="footer_address">新潟市中央区東中通り1番町86-15</p>
                 <p>関本ビル3F</p>

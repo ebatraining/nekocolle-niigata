@@ -3,11 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW,NOARCHIVE">
-    
+
 	<!-- InstanceBeginEditable name="doctitle" -->
 	<title>メンバーズ会員 - ねこコレ 新潟市役所前店</title>
 	<!-- InstanceEndEditable -->
-    
+
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico">
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <!-- InstanceBeginEditable name="css" -->
@@ -32,10 +32,19 @@
 				$(this).trigger('stopRumble');
 			});
 
-            $("#menu_toggle").click(function () {
-                $(this).toggleClass("toggle_close");
-                $("#menu_list ul").toggle();
-            });
+      $("#menu_toggle").click(function () {
+          $(this).toggleClass("toggle_close");
+          $("#menu_list ul").toggle();
+      });
+
+			$('#menu_list ul li a').each(function(){
+				var $href = $(this).attr('href');
+				if(location.href.match($href)) {
+					$(this).parent('li').addClass('current');
+				} else {
+					$(this).parent('li').removeClass('current');
+				}
+			});
 		});
     </script>
     <!-- InstanceBeginEditable name="jsScript" -->
@@ -50,13 +59,13 @@
 			<div id="menu_inner">
 
 				<header id="title">
-					
+
                     <h1 id="logo">
                         <a href="index.html">
                             <img src="images/menu/logo.png" alt="ねこコレ 新潟市役所前店">
                         </a>
                     </h1>
-                        
+
                     <h1 id="logo_sp">
                      	<a href="index.html">
                         	<img src="images/menu/logo_sp.png" alt="ねこコレ 新潟市役所前店">
@@ -132,16 +141,16 @@
 					<li id="privilege_list_1">通常コース(15分コースを除く)をご利用いただきますと<br /><strong>10％OFF</strong></li>
 					<li id="privilege_list_2">100pt(お会計100円につき1pt)貯めていただくと<br /><strong>30分無料or延長</strong></li>
 				</ul>
-                
+
 			</div><!-- #privilege_inner -->
-            
+
             <img src="images/members/privilege_pict.png" alt="" id="privilege_pict" />
-            
+
 		</div><!-- #privilege -->
 
 		<div id="caution" class="mb_20">
 
-			<div id="caution_list_block" class="caution">	
+			<div id="caution_list_block" class="caution">
                 <p>※お作り頂く際に氏名・生年月日・ご住所のご記入が必要です</p>
                 <p>※ポイントは貯まりますが、10％offは次回ご来店時からになります</p>
                 <p>※クーポン、その他割引等との併用はできません</p>
@@ -149,8 +158,8 @@
 
 			<div class="clear"></div>
 		</div><!-- #caution -->
-        
-        
+
+
 		<div id="personal_data">
 			<!--<div id="personal_data_inner"> -->
 				<h4 id="personal_data_title" class="mt_0 mb_10">
@@ -183,10 +192,10 @@
 	</div><!-- #wrapper -->
 
 	<footer id="footer">
-    
+
 		<div id="footer_inner" class="footer_wrapper pb_10">
 			<address id="footer_contact">
-            
+
 				<strong>ねこコレ新潟市役所前店</strong>
 				<p id="footer_address">新潟市中央区東中通り1番町86-15</p>
                 <p>関本ビル3F</p>

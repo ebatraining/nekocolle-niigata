@@ -46,38 +46,18 @@ body {
 	padding-bottom: 15px;
 }
 
-#menu_list ul li a:hover img {
-	background-position: left bottom;
+#menu_list ul li a:hover img{
+	background-position: left top;
 	background-repeat: no-repeat;
+	background-image: url(../images/menu/menu_icon_on.gif);
 }
 
-#menu_list ul li#menu_welcome a:hover img {
-	background-image: url(../images/menu/menu_welcome_over.png);
+.current{
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-image: url(../images/menu/menu_icon.gif);
 }
 
-#menu_list ul li#menu_price a:hover img {
-	background-image: url(../images/menu/menu_price_over.png);
-}
-
-#menu_list ul li#menu_price a.current img {
-	background-image: url(../images/menu/menu_price_over.png);
-}
-
-#menu_list ul li#menu_members a:hover img {
-	background-image: url(../images/menu/menu_members_over.png);
-}
-
-#menu_list ul li#menu_gallery a:hover img {
-	background-image: url(../images/menu/menu_gallery_over.png);
-}
-
-#menu_list ul li#menu_access a:hover img {
-	background-image: url(../images/menu/menu_access_over.png);
-}
-
-#menu_list ul li#menu_link a:hover img {
-	background-image: url(../images/menu/menu_link_over.png);
-}
 
 /*
 ********************************
