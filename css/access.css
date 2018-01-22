@@ -4,7 +4,7 @@
 ********************************
 */
 #access_logo img {
-	width:80%;
+    width:80%;
 }
 
 /*
@@ -13,24 +13,24 @@
 ********************************
 */
 .access_title {
-	color:#42210b; 
+    color:#42210b; 
 }
 
 .icon {
-	background-repeat:no-repeat;
-	background-position:0% 50%;
-	padding-left:30px;
-	line-height:30px;
+    background-repeat:no-repeat;
+    background-position:0% 50%;
+    padding-left:30px;
+    line-height:30px;
 }
 
 ul {
-	margin:0px;
-	padding-left:20px;
+    margin:0px;
+    padding-left:20px;
 }
 
 .caution li {
-	list-style-type:square;
-	font-size:80%;
+    list-style-type:square;
+    font-size:80%;
 }
 
 /*
@@ -38,12 +38,13 @@ ul {
 *  住所                        *
 ********************************
 */
+
 #address_block {
-	width:65%;
-	float:left;
+    width:65%;
+    float:left;
 }
 #address_title .icon {
-	background-image:url(../images/access/adress_icon.gif);
+    background-image:url(../images/access/adress_icon.gif);
 }
 
 
@@ -52,23 +53,24 @@ ul {
 *  アクセス                    *
 ********************************
 */
+
 #access_appearance {
-	width:35%;
-	float:right;
+    width:35%;
+    float:right;
 }
 
 #access_map_link {
-	background-color:#e0d3ca;
-	padding-left:5px;
-	padding-right:5px;
+    background-color:#e0d3ca;
+    padding-left:5px;
+    padding-right:5px;
 }
 
 #access_block iframe {
-	width:100%;
-	height:25%;
+    width:100%;
+    height:25%;
 }
 #access_title .icon {
-	background-image:url(../images/access/access_icon.gif);
+    background-image:url(../images/access/access_icon.gif);
 }
 
 /*
@@ -77,11 +79,11 @@ ul {
 ********************************
 */
 #tel_pict {
-	float:right;
-	width:40%;
+    float:right;
+    width:40%;
 }
 #tel_title .icon {
-	background-image:url(../images/access/tel_icon.gif);
+    background-image:url(../images/access/tel_icon.gif);
 }
 
 /*
@@ -91,11 +93,11 @@ ul {
 */
 
 #working_pict {
-	float:right;
-	width:30%;
+    float:right;
+    width:30%;
 }
 #working_title .icon {
-	background-image:url(../images/access/working_icon.gif);
+    background-image:url(../images/access/working_icon.gif);
 }
 
 /*
@@ -105,32 +107,37 @@ ul {
 *                              *
 ********************************
 */
-@media screen and (max-width:479px) { 
-	/*
-	********************************
-	*  アクセス                    *
-	********************************
-	*/
-	#access_logo img {
-		width:100%;
-	}
-	
-	#address_block,#access_appearance {
-		width:100%;
-		float:none;
-	}
-	#access_appearance {
-		text-align:center;
-	}
-	
-	#access_appearance img {
-		width:60%;
-	}
+@media screen and (max-width:767px) { 
+/*
+********************************
+*  アクセス                    *
+********************************
+*/
 
-	/*
-	********************************
-	*  挿絵                    *
-	********************************
-	*/
-	#tel_pict, #working_pict { display: none; }
+#access_logo img {
+    width:100%;
+}
+
+#address_block,#access_appearance {
+    width:100%;
+    float:none;
+}
+
+#access_appearance {
+    text-align:center;
+}
+
+#access_appearance img {
+    width:60%;
+}
+
+/*
+********************************
+*  挿絵                    *
+********************************
+*/
+
+#tel_pict, #working_pict {
+    display: none;
+}
 }

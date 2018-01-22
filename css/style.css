@@ -1,10 +1,10 @@
 body {
-	background-color: #eee8e6;
-	background-image: url(../images/background.gif);
-	color: #666666;
-	font-family: "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-	text-align: center;
-	margin:0px;
+    background-color: #eee8e6;
+    background-image: url(../images/background.gif);
+    color: #666666;
+    font-family: "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    text-align: center;
+    margin:0px;
 }
 
 /*
@@ -13,7 +13,7 @@ body {
 ********************************
 */
 #title h1 {
-	line-height: 0;
+    line-height: 0;
 }
 
 /*
@@ -23,39 +23,40 @@ body {
 */
 
 #menu {
-	background-image: url(../images/menu/menu_background.png);
-	/*
-	background-color: #FFFFFF;
-	background-color: #f8f5f5;
-	*/
-	position: fixed;
-	z-index: 99999;
+    background-image: url(../images/menu/menu_background.png);
+    /*
+    background-color: #FFFFFF;
+    background-color: #f8f5f5;
+    */
+    position: fixed;
+    z-index: 99999;
 }
 
+
 #menu_list ul {
-	margin:0px;
-	padding:0px;
+    margin:0px;
+    padding:0px;
 }
 
 #menu_list ul li {
-	list-style-type: none;
-	display: block;
+    list-style-type: none;
+    display: block;
 }
 
 #menu_list ul li a img {
-	padding-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 #menu_list ul li a:hover img{
-	background-position: left top;
-	background-repeat: no-repeat;
-	background-image: url(../images/menu/menu_icon_on.gif);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-image: url(../images/menu/menu_icon_on.gif);
 }
 
 .current{
-	background-position: left top;
-	background-repeat: no-repeat;
-	background-image: url(../images/menu/menu_icon.gif);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-image: url(../images/menu/menu_icon.gif);
 }
 
 
@@ -66,7 +67,7 @@ body {
 */
 
 #contents {
-	text-align:left;
+    text-align:left;
 }
 
 /*
@@ -75,8 +76,8 @@ body {
 ********************************
 */
 #page_title, #page_title_sp {
-	margin-top:0px;
-	margin-bottom: 20px;
+    margin-top:0px;
+    margin-bottom: 20px;
 }
 
 /*
@@ -86,99 +87,99 @@ body {
 */
 
 #footer {
-	padding-top: 20px;
+    padding-top: 20px;
 }
 #footer {
-	position: relative;
+    position: relative;
 }
 
 #footer_contact {
-	color: #42210b;
-	text-align: left;
-	font-style: normal;
-	padding-top: 70px;
+    color: #42210b;
+    text-align: left;
+    font-style: normal;
+    padding-top: 70px;
 }
 
 #footer_contact p {
-	background-repeat: no-repeat;
-	background-position:0% 50%;
-	padding-left: 30px;
-	margin: 0px;
-	line-height:150%;
+    background-repeat: no-repeat;
+    background-position:0% 50%;
+    padding-left: 30px;
+    margin: 0px;
+    line-height:150%;
 }
 
 #footer_map {
-	border:1px solid #42210b;
+    border:1px solid #42210b;
 }
 
 #footer_address {
-	background-image: url(../images/footer/footer_house.gif);
+    background-image: url(../images/footer/footer_house.gif);
 }
 
 #footer_tel {
-	background-image: url(../images/footer/footer_tel.gif);
+    background-image: url(../images/footer/footer_tel.gif);
 }
 
 #footer_holiday {
-	background-image: url(../images/footer/footer_calendar.gif);
+    background-image: url(../images/footer/footer_calendar.gif);
 }
 
 #footer_parking {
-	background-image: url(../images/footer/footer_car.gif);
+    background-image: url(../images/footer/footer_car.gif);
 }
 
 #footer_sns {
-	position: absolute;
-	bottom: 30px;
-	width: 100%;
-	*left: 0px;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    left: 0px;
 }
 
 #footer_sns_inner_2 {
-	width:323px;
-	float: right;
+    width:323px;
+    float: right;
 }
 
 #footer_sns_message {
-	text-align: center;
+    text-align: center;
 }
 
 .footer_sns_icon {
-	height: 201px;
-	float: left;
-	background-repeat: no-repeat;
-	text-align: left;
+    height: 201px;
+    float: left;
+    background-repeat: no-repeat;
+    text-align: left;
 }
 
 .footer_sns_icon img {
-	margin-left: 30px;
-	margin-top: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 #footer_tw, #footer_fb {
-	margin-right: 10px;
+    margin-right: 10px;
 
 }
 
 #footer_tw {
-	background-image: url(../images/footer/twitter_bg.png);
-	width: 93px;
+    background-image: url(../images/footer/twitter_bg.png);
+    width: 93px;
 }
 
 #footer_fb {
-	background-image: url(../images/footer/facebook_bg.png);
-	width: 94px;
+    background-image: url(../images/footer/facebook_bg.png);
+    width: 94px;
 }
 
 #footer_ig {
-	background-image: url(../images/footer/instagram_bg.png);
-	width: 116px;
+    background-image: url(../images/footer/instagram_bg.png);
+    width: 116px;
 }
 
 #footer_copy {
-	background-image: url(../images/footer/footer_wood.gif);
-	color: #ffffff;
-	padding:10px 0px;
+    background-image: url(../images/footer/footer_wood.gif);
+    color: #ffffff;
+    padding:10px 0px;
 }
 
 /*
@@ -195,7 +196,10 @@ a img {border: none;}
 .fl_r {  float: right;}
 .clear { clear: both; }
 
-.w_full { width:100%; }
+.w_full {
+    width: 100%;
+    margin: 8% 0;
+}
 
 .mt_0 { margin-top: 0px; }
 
@@ -218,36 +222,36 @@ a img {border: none;}
 }
 
 .white_paper {
-	background-image: url(../images/white_paper.gif);
+    background-image: url(../images/white_paper.gif);
 }
 
 .dot_line_1, .dot_line_2, .dot_line_3, .dot_line_4 {
-	background-repeat:no-repeat;
-	background-position:left bottom;
-	padding-bottom:15px;
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    padding-bottom:15px;
 }
 .dot_line_1 {
-	background-image:url(../images/dot_line_1.png);
+    background-image:url(../images/dot_line_1.png);
 }
 .dot_line_2 {
-	background-image:url(../images/dot_line_2.png);
+    background-image:url(../images/dot_line_2.png);
 }
 .dot_line_3 {
-	background-image:url(../images/dot_line_3.png);
+    background-image:url(../images/dot_line_3.png);
 }
 .dot_line_4 {
-	background-image:url(../images/dot_line_4.png);
+    background-image:url(../images/dot_line_4.png);
 }
 
 
 .caution {
-	margin-left:1em;
-	text-indent:-1em;
-	font-size:80%;
+    margin-left:1em;
+    text-indent:-1em;
+    font-size:80%;
 }
 
 .caution p {
-	margin:0px;
+    margin:0px;
 }
 
 /*
@@ -259,272 +263,140 @@ a img {border: none;}
 */
 @media screen and (max-width:767px) {
 
-	/*
-	********************************
-	*  レイアウト                  *
-	********************************
-	*/
-	#wrapper {
-		text-align: left;
-	}
-
-	/*
-	********************************
-	*  タイトルロゴ                *
-	********************************
-	*/
-	#logo_sp, #logo_sp img {
-		height: 60px;
-	}
-	#title {
-		width: 75%;
-		display: block;
-		float: left;
-		text-align:left;
-	}
-
-	/*
-	********************************
-	*  メニュー                    *
-	********************************
-	*/
-	#menu_list {
-		width: 20%;
-		display: block;
-		float: right;
-	}
-
-	#menu_toggle {
-		background-image: url(../images/menu/menu_toggle.gif);
-		background-position: 50% 50%;
-		display: block;
-		float: right;
-		width: 60px;
-		height: 60px;
-		text-indent: -200em;
-		overflow: hidden;
-		margin-top: 10px;
-		margin-right: 10px;
-	}
-
-	#menu_toggle.toggle_close {
-		background-image: url(../images/menu/menu_toggle_close.gif);
-	}
-
-	#menu_list ul {
-		display: none;
-		background-image: url(../images/menu/menu_background.png);
-		position: fixed;
-		top: 80px;
-		right: 0px;
-		width: 100%;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-
-	#menu_list ul li {
-		padding-left: 10px;
-	}
-
-	/*
-	********************************
-	*  メインコンテンツ            *
-	********************************
-	*/
-	#contents {
-		padding-top: 90px;
-	}
-
-	/*
-	********************************
-	*  タイトル                       *
-	********************************
-	*/
-	#page_title { display: none; }
-	#page_title_sp { display: block; }
-
-	/*
-	********************************
-	*  フッター                     *
-	********************************
-	*/
-	#footer_contact {
-		padding-top: 0px;
-		padding-bottom: 220px;
-	}
-
-	#footer_sns_inner {
-		text-align: center;
-	}
-
-	#footer_sns_inner_2 {
-		float: none;
-		margin: 0px auto;
-	}
-
-	#footer_sns {
-		bottom: 55px;
-	}
+/*
+********************************
+*  レイアウト                  *
+********************************
+*/
+    
+#wrapper {
+    text-align: left;
 }
 
 /*
 ********************************
-*                              *
-*	スマホ・タブレット共通(～1023px)　　*
-*                              *
+*  タイトルロゴ                *
 ********************************
 */
-@media screen and (max-width:1023px) {
 
-	/*
-	********************************
-	*  レイアウト                     *
-	********************************
-	*/
-	#menu {
-		width: 100%;
-		left: 0px;
-		top:0px;
-	}
+#logo,
+#logo img{
+    display: none;
+}
+    
+#logo_sp, #logo_sp img {
+    display: block;
+    height: 60px;
+}
 
-	.footer_wrapper {
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-
-	/*
-	********************************
-	*  タイトルロゴ	                   *
-	********************************
-	*/
-	#logo {display: none;}
-	#logo_sp {
-		display: block;
-		margin:0px;
-	}
-
-	#title h1 {
-		margin:10px;
-	}
-
-	/*
-	********************************
-	*  メインコンテンツ            *
-	********************************
-	*/
-	#contents {
-		margin:0px 10px;
-	}
-
+#title {
+    width: 767px;
+    float: left;
+    text-align:left;
+    background: #f1eae9;
 }
 
 /*
 ********************************
-*                              *
-*	タブレット(768px～1023px)　　   *
-*                              *
+*  メニュー                    *
 ********************************
 */
-@media screen and (min-width:768px) and ( max-width:1023px) {
+    
+#menu_list{
+    display: none;
+}
+    
+#menu_list2{
+    width: 20%;
+    display: block;
+    float: right;
+}
 
-	body {
-		font-size:1.5em;
-		line-height:2em;
-	}
+#menu_toggle {
+    background-image: url(../images/menu/menu_toggle.gif);
+    background-position: 50% 50%;
+    display: block;
+    float: right;
+    width: 60px;
+    height: 60px;
+    text-indent: -200em;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-right: 10px;
+}
 
-	/*
-	********************************
-	*  タイトルロゴ	                   *
-	********************************
-	*/
-	#title {
-		display: block;
-		width:25%;
-		float: left;
-		text-align:left;
-	}
+#menu_toggle.toggle_close {
+    background-image: url(../images/menu/menu_toggle_close.gif);
+}
 
-	#logo_sp, #logo_sp img {
-		height: 80px;
-	}
+#menu_list ul {
+    background-image: url(../images/menu/menu_background.png);
+    position: fixed;
+    top: 80px;
+    right: 0px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+    
+#menu_welcome,
+#menu_price,
+#menu_members,
+#menu_gallery,
+#menu_access,
+#menu_link{
+    margin: 3% 0;
+}
 
-	/*
-	********************************
-	*  メニュー	                   *
-	********************************
-	*/
-	#menu_list {
-		display: block;
-		width:75%;
-		float:right;
-		text-align: right;
-		padding-top: 13px;
-	}
-
-	#menu_list ul li {
-		display: inline;
-	}
-
-	#menu_list ul li img {
-		margin-right:10px;
-	}
-
-	/*
-	********************************
-	*  メインコンテンツ            *
-	********************************
-	*/
-
-	#contents {
-		padding-top: 150px;
-	}
-
-	/*
-	********************************
-	*  フッター                     *
-	********************************
-	*/
-	#footer_sns {
-		bottom:50px;
-	}
-
-	#footer_copy {
-		font-size:24px;
-	}
+#menu_list ul li {
+    padding-left: 10px;
 }
 
 /*
 ********************************
-*                              *
-*	タブレット・PC共通(768px～)     *
-*                              *
+*  メインコンテンツ            *
 ********************************
 */
-@media screen and (min-width:768px) {
+#contents {
+    padding-top: 90px;
+}
 
-	/*
-	********************************
-	*  メニュー	                   *
-	********************************
-	*/
-	#menu_toggle {
-		display: none;
-	}
+/*
+********************************
+*  タイトル                       *
+********************************
+*/
+#page_title{
+    display: none;
+}
 
-	/*
-	********************************
-	*  タイトル                       *
-	********************************
-	*/
-	#page_title { display: block; }
-	#page_title_sp { display: none; }
+#page_title_sp{
+    display: block;
+}
 
-	/*
-	********************************
-	*  フッター	                   *
-	********************************
-	*/
-	#footer_copy br { display: none; }
+/*
+********************************
+*  フッター                     *
+********************************
+*/
+    
+#footer_contact {
+    padding-top: 0px;
+    padding-bottom: 220px;
+}
+
+#footer_sns_inner {
+    text-align: center;
+}
+
+#footer_sns_inner_2 {
+    float: none;
+    margin: 0px auto;
+}
+
+#footer_sns {
+    bottom: 55px;
+}
 }
 
 /*
@@ -534,57 +406,72 @@ a img {border: none;}
 *                              *
 ********************************
 */
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
 
-	/*
-	********************************
-	*  レイアウト                     *
-	********************************
-	*/
-	#wrapper, .footer_wrapper {
-		width: 916px;
-		margin:0px auto;
-		text-align: left;
-	}
+/*
+********************************
+*  レイアウト                     *
+********************************
+*/
+#wrapper, .footer_wrapper {
+    width: 916px;
+    margin:0px auto;
+    text-align: left;
+}
 
-	#menu {
-		width:275px;
-		display: blok;
-		float: left;
-		position: static;
-		top: 0px;
-	}
+#menu {
+    width:275px;
+    display: blok;
+    float: left;
+    position: static;
+    top: 0px;
+}
 
-	#contents {
-		width:611px;
-		display: block;
-		float: right;
-		margin-top:20px;
-	}
+#contents {
+    width:611px;
+    display: block;
+    float: right;
+    margin-top:20px;
+}
 
-	/*
-	********************************
-	*  タイトルロゴ	                   *
-	********************************
-	*/
-	#title {
-		padding:20px;
-	}
+/*
+********************************
+*  タイトルロゴ	                   *
+********************************
+*/
+#title {
+    padding:20px;
+}
 
-	#logo {
-		display: block;
-		margin:0px;
-	}
-	#logo_sp {display: none;}
+#logo {
+    display: block;
+    margin:0px;
+}
 
-	/*
-	********************************
-	*  メニュー	                   *
-	********************************
-	*/
-	#menu_list ul {
-		padding-left: 20px;
-		padding-right: 20px;
-		padding-bottom: 10px;
-	}
+#logo_sp {display: none;}
+
+#page_title{
+    display: block;
+}
+
+#page_title_sp{
+    display: none;
+}
+
+/*
+********************************
+*  メニュー	                   *
+********************************
+*/
+
+#menu_list ul {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+#menu_list2{
+    display: none;
+}
+
 }

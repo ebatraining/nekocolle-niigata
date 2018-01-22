@@ -4,12 +4,12 @@
 ********************************
 */
 #main_visual {
-	box-shadow:0px 0px 3px 0px rgba(0,0,0,0.2);
+    box-shadow:0px 0px 3px 0px rgba(0,0,0,0.2);
 }
 
 #main_desc_text {
-	font-size:1.1em;
-	line-height:1.7em;
+    font-size:1.1em;
+    line-height:1.7em;
 }
 
 /*
@@ -17,8 +17,9 @@
 *  コンテンツリンク            *
 ********************************
 */
+
 .link_block {
-	position:relative;
+    position:relative;
 }
 
 .link_block a {
@@ -28,12 +29,12 @@
     width:100%;
     height:100%;
     text-indent:-999px;
-	*display:block;
-	*overflow:hidden;
+    display:block;
+    overflow:hidden;
 }
 
 .link_block_dot {
-	position:absolute;
+    position:absolute;
     top:0;
     left:0;
     width:100%;
@@ -43,23 +44,23 @@
 }
 
 .link_block_inner {
-	background-image:url(../images/background.gif);
-	width:100%;
+    background-image:url(../images/background.gif);
+    width:100%;
     height:100%;
 }
 
 .link_title {
-	display: block;
+    display: block;
 }
 
 #link_readme {
-	width:58%;
-	float:left;
+    width:58%;
+    float:left;
 }
 
 #link_price {
-	width:39%;
-	float:right;
+    width:39%;
+    float:right;
 }
 
 /*
@@ -68,7 +69,7 @@
 ********************************
 */
 #youtube_movie_inner iframe {
-	width:100%;
+    width:100%;
 }
 
 /*
@@ -78,174 +79,157 @@
 *                              *
 ********************************
 */
-@media screen and (max-width:479px) {
+@media screen and (max-width:767px) {
 
-	/*
-	********************************
-	*  メインビジュアル            *
-	********************************
-	*/
-	#main_desc_text {
-		width:100%;
-		float:none;
-		margin-bottom:10px;
-	}
+/*
+********************************
+*  メインビジュアル            *
+********************************
+*/
 
-	#main_desc_pict {
-		display:none;
-	}
+#main_desc_text {
+    width:100%;
+    float:none;
+    margin-bottom:10px;
+}
 
-	#main_desc_pict_sp {
-		display:block;
-		text-align:center;
-	}
+#main_desc_pict {
+    display:none;
+}
 
-	#main_desc_pict_sp img {
-		width:80%;
-	}
+#main_desc_pict_sp {
+    display:block;
+    text-align:center;
+}
 
-	/*
-	********************************
-	*  コンテンツリンク            *
-	********************************
-	*/
+#main_desc_pict_sp img {
+    width:80%;
+}
 
-	#link_readme {
-		width:100%;
-		float:none;
-		margin-bottom:20px;
-	}
+/*
+********************************
+*  コンテンツリンク            *
+********************************
+*/
 
-	#link_price {
-		width:100%;
-		float:none;
-	}
+#link_readme {
+    width:100%;
+    float:none;
+    margin-bottom:20px;
+}
 
-	#link_readme_title_block {
-		padding-left:130px;
-	}
+#link_price {
+    width:100%;
+    float:none;
+}
 
-	#link_price_title_block {
-		padding-left:110px;
-	}
+#link_readme_title_block {
+    padding-left:130px;
+}
 
-	#price_dummy, #price_pict {
-		display: none;
-	}
-	#price_dummy_sp, #price_pict_sp {
-		display: block;
-	}
+#link_price_title_block {
+    padding-left:110px;
+}
 
-	/*
-	********************************
-	*  YouTube                     *
-	********************************
-	*/
-	#youtube_title { display: none; }
-	#youtube_title_sp { display: block; }
+#price_dummy, #price_pict {
+    display: none;
+}
+    
+#price_dummy_sp, #price_pict_sp {
+    display: block;
+}
 
-	#youtube_text {
-		margin-bottom:10px;
-	}
+/*
+********************************
+*  YouTube                     *
+********************************
+*/
+#youtube_title { display: none; }
+#youtube_title_sp { display: block; }
+
+#youtube_text {
+    margin-bottom:10px;
+}
 }
 
 /*
 ********************************
 *                              *
-*	タブレット(768px～1023px)　　   *
+*	PC共通(768px～)     *
 *                              *
 ********************************
 */
-@media screen and (min-width:480px) and ( max-width:1023px) {
+@media screen and (min-width:768px) {
 
+/*
+********************************
+*  メインビジュアル            *
+********************************
+*/
+#main_desc_text {
+    width:45%;
+    float:left;
+    display:block;
+}
 
+#main_desc_pict {
+    float:right;
+    width:55%;
+    display:block;
+}
+
+#main_desc_pict img {
+    width:100%;
+}
+
+#main_desc_pict_sp {
+    display:none;
+}
+    
+/*
+********************************
+*  コンテンツリンク            *
+********************************
+*/
+
+#price_dummy, #price_pict {
+    display: block;
+}
+    
+#price_dummy_sp, #price_pict_sp {
+    display: none;
 }
 
 /*
 ********************************
-*                              *
-*	タブレット・PC共通(768px～)     *
-*                              *
+*  YouTube                     *
 ********************************
 */
-@media screen and (min-width:480px) {
-
-	/*
-	********************************
-	*  メインビジュアル            *
-	********************************
-	*/
-	#main_desc_text {
-		width:45%;
-		float:left;
-		display:block;
-	}
-
-	#main_desc_pict {
-		float:right;
-		width:55%;
-		display:block;
-	}
-
-	#main_desc_pict img {
-		width:100%;
-	}
-
-	#main_desc_pict_sp {
-		display:none;
-	}
-	/*
-	********************************
-	*  コンテンツリンク            *
-	********************************
-	*/
-	#price_dummy, #price_pict {
-		display: block;
-	}
-	#price_dummy_sp, #price_pict_sp {
-		display: none;
-	}
-
-
-
-	/*
-	********************************
-	*  YouTube                     *
-	********************************
-	*/
-	#youtube_text {
-		width:97%;
-	}
-
-	#youtube_movie {
-		width:97%;
-	}
-	#youtube_title { display: block; }
-	#youtube_title_sp { display: none; }
-
-	#youtube_movie_inner {
-		position: relative;
-		padding-bottom: 56.25%;
-		height: 0;
-		overflow: hidden;
-
-	}
-
-	#youtube_movie_inner iframe {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
+    
+#youtube_text {
+    width:97%;
 }
 
-/*
-********************************
-*                              *
-*	PC(1024px～)               *
-*                              *
-********************************
-*/
-@media screen and (min-width:1024px) {
+#youtube_movie {
+    width:97%;
+}
+
+#youtube_title { display: block; }
+#youtube_title_sp { display: none; }
+
+#youtube_movie_inner {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+#youtube_movie_inner iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 }
