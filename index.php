@@ -106,7 +106,7 @@ $(".drawer").drawer();
                         </div>
                     </div>
                 </div>
-                <a href="readme.html">
+                <a href="readme.php">
                 <img src="images/top/readme.png" alt="初めての方へ" class="w_full link_title" />
                 </a>
             </div>
@@ -120,7 +120,7 @@ $(".drawer").drawer();
                         </div>
                     </div>
                 </div>
-                <a href="price.html">
+                <a href="price.php">
                     <img src="images/top/price.png" alt="料金表" id="price_pict" class="w_full link_title" />
                     <img src="images/top/price_sp.png" alt="料金表" id="price_pict_sp" class="w_full link_title" />
                 </a>

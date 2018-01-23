@@ -345,7 +345,7 @@ a img {border: none;}
 .menu_gallery,
 .menu_access,
 .menu_link{
-    margin: 3% 0;
+    margin-bottom:10%;
 }
 
 #menu_list ul li {
