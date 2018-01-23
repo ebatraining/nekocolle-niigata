@@ -339,12 +339,12 @@ a img {border: none;}
     padding-bottom: 10px;
 }
     
-#menu_welcome,
-#menu_price,
-#menu_members,
-#menu_gallery,
-#menu_access,
-#menu_link{
+.menu_welcome,
+.menu_price,
+.menu_members,
+.menu_gallery,
+.menu_access,
+.menu_link{
     margin: 3% 0;
 }
 
